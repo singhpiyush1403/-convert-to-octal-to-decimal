@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        int decimal = 83; 
+        String octal = "";
+        int temp = decimal;
+        while (temp > 0) {
+            int remainder = temp % 8;
+            octal = remainder + octal; 
+            temp /= 8;
+        }
+        System.out.println("Octal representation: " + octal);
+    }
+}
